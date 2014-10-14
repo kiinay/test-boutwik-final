@@ -5,6 +5,7 @@ gem 'rails', '3.2.17'
 gem 'pg'
 gem 'carrierwave'
 gem 'turbolinks'
+gem 'simple_form'
 
 group :assets do
   gem 'haml-rails'

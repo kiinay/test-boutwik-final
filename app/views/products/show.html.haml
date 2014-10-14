@@ -7,8 +7,9 @@
   %b Description:
   = @product.description
 %p
-  %b Picture:
-  = image_tag(@idea.picture_url, :width => 600) if @idea.picture.present?
+  %b
+    Picture:
+  = image_tag(@product.picture_url, :width => 200) if @product.picture.present?
 
 = link_to 'Edit', edit_product_path(@product)
 \|
