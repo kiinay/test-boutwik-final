@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.17'
 
 gem 'pg'
+gem 'carrierwave'
 
 group :assets do
   gem 'haml-rails'
