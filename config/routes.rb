@@ -2,6 +2,7 @@ TestBoutwikFinal::Application.routes.draw do
   root :to => 'home#index'
 
   resources :products
+  resources :articles
 
 
   # The priority is based upon order of creation:
