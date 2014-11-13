@@ -1,2 +1,17 @@
-%h1 Article#index
-%p Find me in app/views/articles/index.html.haml
+%h1
+  Listing articles
+.link
+  = link_to 'New Article', new_article_path
+
+- @articles.each do |article|
+  .col-md-4
+    .article
+      %h2
+        = article.title
+      %p.description
+        = article.description
+      .more
+        = link_to 'Show', article
+        = link_to 'Edit', edit_article_path(article)
+        = link_to 'Destroy', article, :method => :delete, :data => { :confirm => 'Are you sure?' }
+

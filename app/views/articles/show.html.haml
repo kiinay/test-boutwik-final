@@ -1,2 +1,16 @@
-%h1 Article#show
-%p Find me in app/views/articles/show.html.haml
+%p#notice= notice
+
+%p
+  %b Name:
+  = @article.title
+%p
+  %b Description:
+  = @article.description
+%p
+  %b
+    Picture:
+  = image_tag(@article.picture_url, :width => 200) if @article.picture.present?
+
+= link_to 'Edit', edit_article_path(@article)
+\|
+= link_to 'Back', articles_path
